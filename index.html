@@ -4,40 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="folder.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="IMG_6321.JPG" alt="Profile Picture">
-            <div class="text-container">
-                <div class="animated-text">
-                    <p>kepadamu dulu aku jatuh cinta</p>
-                    <p>menanam asa bisa bersama sepanjang usia</p>
-                    <p>saat itu engkau di tepian kota</p>
-                    <p>aku masih sendiri kau sudah jadi miliknya</p>
-                    <p>terima kasih atas segala rasa</p>
-                    <p>pada hari itu pun aku turut bahagia</p>
-                    <p>karena aku selalu tahu</p>
-                    <p>menyukaimu bukan berarti selalu memilikimu</p>
-                </div>
+    <div class="bungkus">
+        <section class="hero">
+            <h1 class="heading">Playlist</h1>
+            <div class="container">
+                <a href="index.html">
+                    <div class="card">
+                        <img src="IMG_6321.JPG" alt="">
+                        <h2>Hal - Terimakasih</h2>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="card">
+                        <img src="Gambar WhatsApp 2024-03-23 pukul 09.29.53_b3bdc357.jpg" alt="">
+                        <h2>Hal - Lara</h2>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="card">
+                        <img src="foto2.JPG" alt="">
+                        <h2>Andra - Sempurna</h2>
+                    </div>
+                </a>
             </div>
-            <div class="audio-container">
-                <audio id="myAudio" autoplay controls>
-                    <source src="Video WhatsApp 2024-03-29 pukul 00.49.19_f2ab059f.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </div>
+        </section>
     </div>
-   
-    <script>
-        // JavaScript untuk looping audio
-        const audio = document.getElementById('myAudio');
-        audio.addEventListener('ended', () => {
-            audio.currentTime = 0; // Mulai dari awal
-            audio.play(); // Putar lagi
-        });
-    </script>
 </body>
 </html>
