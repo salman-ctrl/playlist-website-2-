@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.bungkus {
+    display: flex;
+    justify-content: center; /* Center hero horizontally */
+    align-items: center; /* Center hero vertically if height is set */
+    height: 100vh; /* Make sure .bungkus fills the viewport height */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack heading and container vertically */
+    align-items: center; /* Center content horizontally */
+    border: 3px solid black;
+    width: 800px; /* Set width for hero */
+    position: relative; /* Needed for positioning heading inside hero */
+    background-color: darkgrey; /* Set background color to ensure readability */
+    padding: 20px; /* Padding around the hero content */
+    height: 400px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 0; /* Margin for heading */
+    width: 100%; /* Ensure heading spans the width of the hero */
+    max-width: 800px; /* Constrain heading width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: white; /* Ensure text is readable against background */
+    border-radius:5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Arrange cards horizontally */
+    justify-content: center; /* Center cards horizontally */
+    align-items: center; /* Center cards vertically */
+    gap: 20px; /* Gap between cards */
+  
+
+}
+
+.card {
+    width: 200px;
+    height: 270px;
+    box-sizing: border-box;
+    border: 2px solid #cd853f;
+    background-color: peru;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    margin: 0; /* Remove card margin if not needed */
+    box-shadow: 4px 4px 8px rgba(163, 160, 125, 0.5); 
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2{
+    text-align: center;
+    margin: 15px 0; /* Margin for heading */
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+}

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(80, 86, 86);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    position: relative;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgba(255, 254, 252, 0.8);
+    box-shadow: 10px 10px 10px rgba(35, 131, 163, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar mengisi card */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-text {
+    animation: slideUp 20s linear infinite;
+    text-align: center;
+}
+
+.animated-text p {
+    margin: 0;
+    opacity: 0;
+    animation: fadeInOut 8s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.audio-container {
+    position: absolute;
+    bottom: 10px; /* Mengatur posisi audio di bawah card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
